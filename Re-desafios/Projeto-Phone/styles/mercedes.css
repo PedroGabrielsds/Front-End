@@ -6,43 +6,18 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    font-size: 3.5vw;
 
 }
+
+/* Ínicio Header */
 
 header {
     width: 100%;
-    height: 200px;
-    background-color: rgba(121, 121, 121, 0.753);
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-header #img {
-    max-width: 500px;
-
-}
-
-header #img img {
-    max-width: 250px;
-    height: 100%;
-
-}
-
-::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-
-}
-
-main {
-    width: 100%;
+    height: auto;
+    
+    background-color: gray;
 
     display: flex;
     flex-flow: column nowrap;
@@ -51,37 +26,151 @@ main {
 
 }
 
-section#conteudo {
-    max-width: 500px;
-    border: 1px solid black;
-    text-align: justify;
-    padding: 20px;
+header #logo {
+    width: 300px;
+
+}
+
+header #logo img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+
+}
+
+nav {
+    display: block;
+
+}
+
+i#botao-menu {
+    width: 100%;
+    background-color: rgb(95, 95, 95);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+#menu.menu-aberto {
+    display: block;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 10px;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(95, 95, 95);
+
+    border-bottom: 2px solid black;
+
+}
+
+nav > ul > li > a:hover, i#botao-menu:hover {
+    background-color: rgb(170, 170, 170);
+    color: black;
+    cursor: pointer;
+
+}
+
+/* Fim Header */
+
+main {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+article#mercedes {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+h1, p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
+
+}
+
+article#mercedes .figuras {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+article#mercedes .imagens, .figuras .descricao {
+    width: 250px;
+    height: 300px;
+
+}
+
+article#mercedes .imagens img {
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid black;
+
+}
+
+.figuras .descricao {
+    height: auto;
+
+}
+
+section#maybach {
+    width: 100%;
+
+}
+
+section#maybach #maybach-externo {
+    width: 100%;
+
+}
+
+section#maybach #maybach-lateral {
+    width: 100%;
+
+}
+
+section#maybach #maybach-interno {
+    width: 100%;
     
 }
 
-section#conteudo h1, h2 {
-    background-image: linear-gradient(to right, black, gray);
-    color: white;
-    text-indent: 10px;
-
-}
-
-section#conteudo p, h1, h2 {
+.apresentacao {
     margin-bottom: 10px;
 
 }
 
-section#conteudo .imagem {
+.apresentacao img {
     width: 100%;
-    height: 250px;
-    margin-bottom: 10px;
-
-    border: 1px solid black;
-
-}
-
-.imagem img {
-    width: 100%;
-    height: 100%;
 
 }
