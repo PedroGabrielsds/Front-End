@@ -5,6 +5,14 @@
 
 }
 
+@font-face {
+    font-family: 'PlayfairDisplaySC';
+    src: url('../Fonts/PlayfairDisplaySC-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -109,22 +117,36 @@ main {
 article#mercedes {
     width: 100%;
     margin: auto;
-    
+    padding: 10px;
 
     display: flex;
     flex-flow: column nowrap;
 
 }
 
-h1, p {
+article#mercedes h1, p {
     margin-top: 10px;
     margin-bottom: 10px;
-    text-align: start;
+    text-align: left;
+
+}
+
+article#mercedes h1, h2 {
+    font-family: PlayfairDisplaySC, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+
+}
+
+article#mercedes p {
+    line-height: 1.5;
 
 }
 
 article#mercedes .figuras {
     width: 100%;
+    height: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
 
@@ -136,12 +158,8 @@ article#mercedes .figuras {
 }
 
 article#mercedes .imagens, .figuras .descricao {
-    width: 60%;
-    /*width: 250px;
-    height: 300px;*/
+    width: 61.5%;
     height: 70%;
-
-    border: 2px solid red;
 
 }
 
@@ -155,6 +173,8 @@ article#mercedes .imagens img {
 
 .figuras .descricao {
     height: auto;
+    border: 2px solid black;
+    border-top: none;
 
 }
 
