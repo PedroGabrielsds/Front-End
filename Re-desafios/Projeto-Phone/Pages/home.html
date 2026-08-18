@@ -19,10 +19,85 @@
 
         }
 
+        main {
+            position: relative;
+            width: 99%;
+            height: 99vh;
+
+            border: 3px solid blue;
+
+        }
+
+        div.app {
+            position: absolute;
+
+            width: 170px;
+            height: 250px;
+            border: 2px solid transparent;
+
+            top: 2%;
+            left: 77.5%;
+
+        }
+
+        div.app:hover, div.app:hover div.mercedes, div.app:hover div.nome {
+            border: 2px solid aqua;
+            cursor: pointer;
+
+        }
+
+        div.mercedes {
+            position: relative;
+            width: 159px;
+            height: 157px;
+            
+            border-radius: 20%;
+
+            top: 8.7%;
+            left: 2.5%;
+
+        }
+
+        div.app .nome {
+            position: absolute;
+
+            width: 159px;
+            height: 50px;
+            border: 2px solid transparent;
+
+            top: 75%;
+            left: 2%;
+
+        }
+
+        div.app .nome > h1 {
+            background-color: #7a051f;
+            color: #ffd0d7;
+            font-family: Helvetica;
+            line-height: 50px;
+            padding-left: 6px;
+
+        }
+
     </style>
 </head>
 <body>
-    <main></main>
+    <main>
+        <div class="app">
+            <div class="mercedes">
+
+
+            </div>
+
+            <div class="nome">
+                <h1>Mercedes</h1>
+
+            </div>
+
+        </div>
+        
+
+    </main>
     
 </body>
 </html>
