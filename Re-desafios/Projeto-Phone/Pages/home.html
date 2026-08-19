@@ -24,35 +24,36 @@
             width: 262px;
             height: 466px;
 
-            border: 3px solid blue;
+            border: 3px solid transparent;
 
         }
 
-        div.app {
+        /* Inicio App Mercedes */
+
+        div.apps {
             position: absolute;
 
             width: 60px;
             height: 70px;
-            
 
             top: 1%;
             left: 76%;
             
         }
 
-        div.app:hover, div.app:hover div.mercedes {
+        div.apps:hover, div.apps:hover div.apps-icones {
             outline: 2px solid aqua;
             cursor: pointer;
 
         }
 
-        div.mercedes {
+        div.apps div.apps-icones {
             position: relative;
             width: 75%;
             /*width: 159px;*/
             /*height: 157px;*/
             height: 61%;
-            
+            outline: 1px solid white;
             border-radius: 20%;
 
             top: 8.7%;
@@ -60,7 +61,7 @@
 
         }
 
-        div.app .nome {
+        div.apps .apps-nomes {
             position: absolute;
             width: 70%;
             /*width: 159px;*/
@@ -73,28 +74,95 @@
 
         }
 
-        /*div.app .nome > h1 {
-            background-color: #7a051f;
-            color: #ffd0d7;
-            font-family: Helvetica;
-            line-height: 50px;
-            padding-left: 6px;
+        /* Inicio App Ferrari */
+        div.app-ferrari {
 
-        }*/
+            top: 17%;
+            left: 26.5%;
+
+        }
+
+        div.app-ferrari div.icone-ferrari {
+            width: 70%;
+            outline: 1px solid gold;
+
+            top: 10%;
+            left: 15%;
+
+        }
+
+        /* Inicio App Ferrari */
+        div.app-lambo {
+
+            top: 17.3%;
+            left: 51%;
+
+        }
+
+        div.app-lambo div.icone-lambo {
+            width: 69%;
+            outline: 2px solid black;
+
+            left: 15%;
+
+        }
+
+        /* Inicio App Ferrari */
+        div.app-porsche {
+            top: 65.9%;
+            left: 75.7%;
+
+            outline: 2px solid gray;
+
+        }
 
     </style>
 </head>
 <body>
     <main>
-        <div class="app">
+        <!-- App Mercedes -->
+        <div class="app-meca apps">
+            
             <a href="../Pages/mercedes.html" target="frames">
-                <div class="mercedes"></div>
+                <div class="icone-meca apps-icones" ></div>
 
-                <div class="nome"></div>
+                <div class="nome-meca apps-nomes"></div>
             </a>
 
         </div>
-        
+
+        <!-- App Ferrari -->
+        <div class="app-ferrari apps">
+            
+            <a href="#" target="frames">
+                <div class="icone-ferrari apps-icones"></div>
+
+                <div class="nome-ferrari apps-nomes"></div>
+            </a>
+
+        </div>
+
+        <!-- App Lamborghini -->
+        <div class="app-lambo apps">
+            
+            <a href="#" target="frames">
+                <div class="icone-lambo apps-icones"></div>
+
+                <div class="nome-lambo apps-nomes"></div>
+            </a>
+
+        </div>
+
+        <!-- App Porsche -->
+        <div class="app-porsche apps">
+            
+            <a href="#" target="frames">
+                <div class="icone-porsche apps-icones"></div>
+
+                <div class="nome-porsche apps-nomes"></div>
+            </a>
+
+        </div>
 
     </main>
     
