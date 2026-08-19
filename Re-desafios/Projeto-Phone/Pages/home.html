@@ -21,8 +21,8 @@
 
         main {
             position: relative;
-            width: 99%;
-            height: 99vh;
+            width: 262px;
+            height: 466px;
 
             border: 3px solid blue;
 
@@ -31,68 +31,67 @@
         div.app {
             position: absolute;
 
-            width: 170px;
-            height: 250px;
-            border: 2px solid transparent;
+            width: 60px;
+            height: 70px;
+            
 
-            top: 2%;
-            left: 77.5%;
-
+            top: 1%;
+            left: 76%;
+            
         }
 
-        div.app:hover, div.app:hover div.mercedes, div.app:hover div.nome {
-            border: 2px solid aqua;
+        div.app:hover, div.app:hover div.mercedes {
+            outline: 2px solid aqua;
             cursor: pointer;
 
         }
 
         div.mercedes {
             position: relative;
-            width: 159px;
-            height: 157px;
+            width: 75%;
+            /*width: 159px;*/
+            /*height: 157px;*/
+            height: 61%;
             
             border-radius: 20%;
 
             top: 8.7%;
-            left: 2.5%;
+            left: 11%;
 
         }
 
         div.app .nome {
             position: absolute;
-
-            width: 159px;
-            height: 50px;
+            width: 70%;
+            /*width: 159px;*/
+            /*height: 50px;*/
+            height: 10%;
             border: 2px solid transparent;
 
-            top: 75%;
-            left: 2%;
+            top: 77%;
+            left: 11%;
 
         }
 
-        div.app .nome > h1 {
+        /*div.app .nome > h1 {
             background-color: #7a051f;
             color: #ffd0d7;
             font-family: Helvetica;
             line-height: 50px;
             padding-left: 6px;
 
-        }
+        }*/
 
     </style>
 </head>
 <body>
     <main>
         <div class="app">
-            <div class="mercedes">
+            <a href="../Pages/mercedes.html" target="frames">
+                <div class="mercedes"></div>
 
-
-            </div>
-
-            <div class="nome">
-                <h1>Mercedes</h1>
-
-            </div>
+                <div class="nome"></div>
+            </a>
 
         </div>
         
