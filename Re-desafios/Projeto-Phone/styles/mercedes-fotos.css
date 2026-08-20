@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+}
+
+/* Ínicio Header */
+
+header {
+    width: 100%;
+    height: auto;
+    
+    background-color: gray;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header #logo {
+    width: 250px;
+
+}
+
+header #logo img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+
+}
+
+nav {
+    display: block;
+
+}
+
+i#botao-menu {
+    width: 100%;
+    background-color: rgb(95, 95, 95);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+#menu.menu-aberto {
+    display: block;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 10px;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(95, 95, 95);
+
+    border-bottom: 2px solid black;
+
+}
+
+nav > ul > li > a:hover, i#botao-menu:hover {
+    background-color: rgb(170, 170, 170);
+    color: black;
+    cursor: pointer;
+
+}
+
+/* Fim Header */
+
+
+
+
+
+
+section#maybach {
+    width: 100%;
+
+}
+
+section#maybach #maybach-externo {
+    width: 100%;
+
+}
+
+section#maybach #maybach-lateral {
+    width: 100%;
+
+}
+
+section#maybach #maybach-interno {
+    width: 100%;
+    
+}
+
+.apresentacao {
+    margin-bottom: 10px;
+
+}
+
+.apresentacao img {
+    width: 100%;
+
+}
