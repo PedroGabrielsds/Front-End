@@ -163,6 +163,30 @@ article#mercedes .imagens, .figuras .descricao {
 
 }
 
+/* Imagem Angemeldet 1909 */
+article#mercedes #angemeldet {   
+    width: 80%;
+    height: 53%;
+
+}
+
+article#mercedes #angemeldet img {   
+    border: 2px solid goldenrod;
+
+}
+
+/* Imagem mercedes 1933 */
+article#mercedes .figuras #meca-1993 {
+    width: 80%;
+
+}
+
+/* Imagem mercedes */
+article#mercedes .figuras #meca-atual {
+    width: 85%;
+
+}
+
 article#mercedes .imagens img {
     width: 100%;
     height: 100%;
@@ -172,40 +196,32 @@ article#mercedes .imagens img {
 }
 
 .figuras .descricao {
+    width: 80%;
     height: auto;
-    border: 2px solid black;
-    border-top: none;
-
-}
-
-section#maybach {
-    width: 100%;
-
-}
-
-section#maybach #maybach-externo {
-    width: 100%;
-
-}
-
-section#maybach #maybach-lateral {
-    width: 100%;
-
-}
-
-section#maybach #maybach-interno {
-    width: 100%;
-    
-}
-
-.apresentacao {
-    margin-bottom: 10px;
-
-}
-
-.apresentacao img {
-    width: 100%;
 
 }
 
 /* Fim Main */
+
+/* Inicio Footer */
+
+footer {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: red;
+
+}
