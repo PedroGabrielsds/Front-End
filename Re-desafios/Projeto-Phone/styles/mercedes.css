@@ -161,6 +161,34 @@ article#mercedes .imagens, .figuras .descricao {
     width: 61.5%;
     height: 70%;
 
+    
+
+}
+
+article#mercedes .figuras .descricao {
+    border: 2px solid black;
+    border-top: none;
+
+}
+
+/* Imagem Gottlieb */
+article#mercedes .figuras > .gottlieb {
+    width: 70%;
+    max-width: 165px;
+
+}
+
+/* Imagem Maybach */
+article#mercedes .figuras > .maybach, article#mercedes .figuras > .des-maybach {
+    width: 70%;
+    max-width: 165px;
+
+}
+
+/* Imagem Angemeldet 1909 */
+article#mercedes #img-fusao, article#mercedes #des-fusao {
+    width: 60%;
+
 }
 
 /* Imagem Angemeldet 1909 */
@@ -175,6 +203,12 @@ article#mercedes #angemeldet img {
 
 }
 
+article#mercedes #des-angemeldet {
+    border: 2px solid goldenrod;
+    border-top: none;
+
+}
+
 /* Imagem mercedes 1933 */
 article#mercedes .figuras #meca-1993 {
     width: 80%;
@@ -183,6 +217,11 @@ article#mercedes .figuras #meca-1993 {
 
 /* Imagem mercedes */
 article#mercedes .figuras #meca-atual {
+    width: 85%;
+
+}
+
+article#mercedes .figuras #des-meca-atual {
     width: 85%;
 
 }
@@ -226,21 +265,98 @@ footer a:hover {
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+/* Fim Footer */
+
+/* Inicio Media Queries */
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
     article#mercedes {
         min-width: 55%;
-        max-width: 500px;
+        max-width: 650px;
 
         border: 2px solid black;
 
     }
 
+    article#mercedes .figuras > .descricao {
+        width: 40%;
+        border: 2px solid black;
+        border-top: none;
+
+    }
+
+    article#mercedes div#dupla > .figuras {
+        width: 40%;
+
+    }
+
+    article#mercedes div#dupla {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    /* Imagem Gottlieb */
+    article#mercedes .figuras > .gottlieb {
+        width: 70%;
+        max-width: 165px;
+
+    }
+
+    /* Imagem Maybach */
+    article#mercedes .figuras > .maybach, article#mercedes .figuras > .des-maybach {
+        width: 70%;
+        max-width: 165px;
+
+    }
+
+    /* Imagem Angemeldet 1909 */
+    article#mercedes #img-fusao, article#mercedes #des-fusao {
+        width: 35%;
+
+    }
+
+    /* Imagem Angemeldet 1909 */
+    article#mercedes #angemeldet {   
+        width: 40%;
+        height: 60%;
+
+    }
+
+    article#mercedes #angemeldet img {   
+        border: 2px solid goldenrod;
+
+    }
+
+    article#mercedes #des-angemeldet {
+        border: 2px solid goldenrod;
+        border-top: none;
+
+    }
+
+    /* Imagem mercedes 1933 */
+    article#mercedes .figuras #meca-1993 {
+        width: 40%;
+
+    }
+
+    /* Imagem mercedes */
+    article#mercedes .figuras #meca-atual {
+        width: 35%;
+        
+
+    }
+
+    article#mercedes .figuras #des-meca-atual {
+        width: 35%;
+
+    }
+
 }
 
-
-@media screen and (min-width:768px) and (max-width: 992px) {
+@media screen and (min-width:768px) and (max-width: 1024px) {
     article#mercedes {
-        width: 60%;
+        width: 70%;
 
         border: 2px solid black;
         border-radius: 10px;
@@ -254,25 +370,36 @@ footer a:hover {
 
     article#mercedes .figuras > .descricao {
         width: 60%;
+        border: 2px solid black;
+        border-top: none;
 
     }
 
     /* Imagem Gottlieb */
     article#mercedes .figuras > .gottlieb {
-        width: 60%;
+        width: 70%;
+        max-width: 165px;
 
     }
 
     /* Imagem Maybach */
-    article#mercedes .figuras > .maybach {
-        width: 60%;
+    /* Imagem Maybach */
+    article#mercedes .figuras > .maybach, article#mercedes .figuras > .des-maybach {
+        width: 70%;
+        max-width: 165px;
+
+    }
+
+    /* Imagem Angemeldet 1909 */
+    article#mercedes #img-fusao, article#mercedes #des-fusao {
+        width: 35%;
 
     }
 
     /* Imagem Angemeldet 1909 */
     article#mercedes #angemeldet {   
-        width: 45%;
-        height: 70%;
+        width: 40%;
+        height: 60%;
 
     }
 
@@ -281,21 +408,116 @@ footer a:hover {
 
     }
 
+    article#mercedes #des-angemeldet {
+        width: 40%;
+        border: 2px solid goldenrod;
+        border-top: none;
+
+    }
+
     /* Imagem mercedes 1933 */
     article#mercedes .figuras #meca-1993 {
-        width: 45%;
+        width: 40%;
+
+    }
+
+    article#mercedes .figuras #des-meca-1993 {
+        width: 40%;
 
     }
 
     /* Imagem mercedes */
     article#mercedes .figuras #meca-atual {
-        width: 50%;
+        width: 35%;
+    
+    }
+
+    article#mercedes .figuras #des-meca-atual {
+        width: 35%;
 
     }
 }
 
 @media screen and (min-width: 1024px) {
     article#mercedes {
+        width: 75%;
+        max-width: 800px;
+
+        border: 2px solid black;
+        border-radius: 10px;
+
+    }
+
+    article#mercedes #dupla {
+        display: flex;
+
+    }
+
+    article#mercedes .figuras > .descricao {
+        width: 60%;
+        border: 2px solid black;
+        border-top: none;
+
+    }
+
+    /* Imagem Gottlieb */
+    article#mercedes .figuras > .gottlieb {
+        width: 70%;
+        max-width: 165px;
+
+    }
+
+    /* Imagem Maybach */
+    /* Imagem Maybach */
+    article#mercedes .figuras > .maybach, article#mercedes .figuras > .des-maybach {
+        width: 70%;
+        max-width: 165px;
+
+    }
+
+    /* Imagem Angemeldet 1909 */
+    article#mercedes #img-fusao, article#mercedes #des-fusao {
+        width: 35%;
+
+    }
+
+    /* Imagem Angemeldet 1909 */
+    article#mercedes #angemeldet {   
+        width: 40%;
+        height: 60%;
+
+    }
+
+    article#mercedes #angemeldet img {   
+        border: 2px solid goldenrod;
+
+    }
+
+    article#mercedes #des-angemeldet {
+        width: 40%;
+        border: 2px solid goldenrod;
+        border-top: none;
+
+    }
+
+    /* Imagem mercedes 1933 */
+    article#mercedes .figuras #meca-1993 {
+        width: 40%;
+
+    }
+
+    article#mercedes .figuras #des-meca-1993 {
+        width: 40%;
+
+    }
+
+    /* Imagem mercedes */
+    article#mercedes .figuras #meca-atual {
+        width: 35%;
+    
+    }
+
+    article#mercedes .figuras #des-meca-atual {
         width: 35%;
 
     }
