@@ -85,7 +85,6 @@ a.botao:active {
 }
 
 /* Configuração da barra de rolagem */
-
 section#conteiner-botoes::-webkit-scrollbar {
     height: 6px; 
     
@@ -112,13 +111,11 @@ section#conteiner-botoes::-webkit-scrollbar-thumb:active {
     
 }
 
-
 /*
   Fim Botões
 
   Inicio Celular 
 */
-
 
 #celular {
     width: 100%;
@@ -159,6 +156,13 @@ section#moldura #frame {
 
 }
 
+/*
+  Fim Botões
+
+ Inicio Media Queries 
+ 
+ */
+
 @media screen and (max-width: 505px) {
     section#conteiner-botoes {
         width: 75%;
@@ -190,4 +194,12 @@ section#moldura #frame {
 
     }
 
+}
+
+@media screen and (max-height: 855px) {
+    section#conteiner-botoes {
+        display: none;
+
+    }
+    
 }
