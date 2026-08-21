@@ -196,10 +196,10 @@ section#moldura #frame {
 
 }
 
-@media screen and (max-height: 855px) {
+@media screen and (max-height: 855px) and (max-width: 506px) {
     section#conteiner-botoes {
         display: none;
 
     }
-    
+
 }
