@@ -5,83 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelos</title>
     <link rel="stylesheet" href="../styles/mercedes-fotos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="icon" href="../images/mercedes-benz/Logo-Mercedes.ico" type="image/x-icon">
 </head>
 <body>
     <header>
+        <div id="logo">
+            <img src="../images/mercedes-benz/Banner-Mercedes-Benz.png" alt="Logo-Mercedes">
 
-
+        </div>
+    
     </header>
 
+    <nav>
+        <i id="botao-menu" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+
+        <ul id="menu">
+            <li><a href="../index.html" target="_parent">Home</a></li>
+            <li><a href="../Pages/mercedes.html">Voltar</a></li>
+
+        </ul>
+        
+    </nav>
+
     <main>
-        <h2>Maybach</h2>
-            <section id="maybach">
-                <div id="maybach-externo" class="apresentacao">
-                    <img src="../images/mercedes-benz/Mercedes-Classe-S-Maybach.jpg" alt="Maybach">
+        <article id="conteiner">
+            <section id="primeiro-carro">
+                <div class="titulos">
+                    <h1>Nome do carro</h1>
 
                 </div>
-
-                <div id="maybach-lateral" class="apresentacao">
-                    <img src="../images/mercedes-benz/Maybach.jpg" alt="Maybach">
-
-                </div>
-
-                <div id="maybach-interno" class="apresentacao">
-                    <img src="../images/mercedes-benz/interior-maybach.jpg" alt="interior-maybach">
-
-                </div>
-
-            </section>
-
-            <h2>Outro Carro</h2>
-            <section id="maybach">
-                <div id="maybach-externo" class="apresentacao">
-                    <img src="../images/mercedes-benz/Mercedes-Classe-S-Maybach.jpg" alt="Maybach">
-
-                </div>
-
-                <div id="maybach-lateral" class="apresentacao">
-                    <img src="../images/mercedes-benz/Maybach.jpg" alt="Maybach">
-
-                </div>
-
-                <div id="maybach-interno" class="apresentacao">
-                    <img src="../images/mercedes-benz/interior-maybach.jpg" alt="interior-maybach">
-
+                
+                <div class="fotos">
+                    <div class="imagens" id="maybach-frente">
+                        <img src="" alt="">
+                    </div>
+                    <div class="imagens" id="maybach-traseira">
+                        <img src="" alt="">
+                    </div>
+                    <div class="imagens" id="maybach-interior">
+                        <img src="" alt="">
+                    </div>
                 </div>
 
             </section>
 
-            <h2>Outro Carro</h2>
-            <section id="maybach">
-                <div id="maybach-externo" class="apresentacao">
-                    <img src="../images/mercedes-benz/Mercedes-Classe-S-Maybach.jpg" alt="Maybach">
-
-                </div>
-
-                <div id="maybach-lateral" class="apresentacao">
-                    <img src="../images/mercedes-benz/Maybach.jpg" alt="Maybach">
-
-                </div>
-
-                <div id="maybach-interno" class="apresentacao">
-                    <img src="../images/mercedes-benz/interior-maybach.jpg" alt="interior-maybach">
-
-                </div>
-
-            </section>
-
+        </article>
+        
     </main>
 
     <footer>
-        <footer>
-            Desenvolvido por <a href="#">Mack</a>
-    
-        </footer>
+        Desenvolvido por <a href="https://github.com/PedroGabrielsds" target="_blank">Mack</a>
 
     </footer>
     
-
-    
 </body>
+
+<script>
+    function clickMenu() {
+        const menu = document.getElementById('menu');
+
+        menu.classList.toggle('menu-aberto');
+
+    }
+
+</script>
+
 </html>
