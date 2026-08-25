@@ -8,7 +8,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: white;
 
@@ -99,46 +99,234 @@ nav > ul > li > a:hover, i#botao-menu:hover {
 
 main {
     width: 100%;
-    padding: 10px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 
 }
 
 article#conteiner {
-    width: 500px;
-
-
-    border: 2px solid black;
+    /*width: 500px;*/
+    width: 97.5%;
 
 }
 
-section#primeiro-carro {
+section.modelos {
+    margin-top: 20px;
+
+}
+
+/* ínicio Modelo 1 */
+
+section#modelo1 {
     width: 100%;
-    height: 500px;
-
-    border: 2px solid rgb(0, 255, 0);
+    height: auto;
+    
+    outline: 2px solid rgb(0, 255, 0);
 
 }
 
-section#primeiro-carro .titulos {
-    height: 50px;
+section#modelo1 .titulos {
+    height: 10%;
     outline: 2px solid blueviolet;
-    margin: 10px;
+    text-align: center;
+    line-height: 50px;
 
 }
 
-.fotos {
+section#modelo1 .album {
     display: flex;
     flex-flow: column wrap;
 
 }
 
-.fotos .imagens {
-    width: 100px;
-    height: 100px;
-    outline: 2px solid red;
-    margin: 10px;
+section#modelo1 .album .imagens {
+    width: 100%;
+    margin: 10px 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
 
 }
+
+section#modelo1 .album #album-img1 {
+    /*width: 400px;*/
+    width: 80%;
+    height: 100%;
+
+}
+
+section#modelo1 .album #album-img1:hover, section#modelo1 .album #img1:hover {
+    /*width: 400px;*/
+    width: 95%;
+    height: 90%;
+    justify-content: center;
+    cursor: none;
+
+}
+
+
+
+section#modelo1 .album #album-img2 {
+    /*width: 430px;*/
+    width: 86%;
+    height: 100%;
+
+}
+
+section#modelo1 .album #album-img3 {
+    /*width: 470px;*/
+    width: 94%;
+    height: 100%;
+
+}
+
+section.modelos .album img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Fim Modelo 1 */
+
+/* ínicio Modelo 2 */
+section#modelo2 {
+    width: 100%;
+    height: auto;
+
+    outline: 2px solid rgb(0, 255, 0);
+
+}
+
+section#modelo2 .titulos {
+    height: 10%;
+    outline: 2px solid blueviolet;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+section#modelo2 .album {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+section#modelo2 .album .imagens {
+    width: 100%;
+    margin: 10px 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+
+}
+
+section#modelo2 .album #album-img1 {
+    /*width: 400px;*/
+    width: 80%;
+    height: 100%;
+
+}
+
+section#modelo2 .album #img1, section#modelo2 .album #img3 {
+    justify-content: left;
+
+}
+
+section#modelo2 .album #album-img2 {
+    /*width: 430px;*/
+    width: 86%;
+    height: 100%;
+
+}
+
+section#modelo2 .album #album-img3 {
+    /*width: 470px;*/
+    width: 94%;
+    height: 100%;
+
+}
+
+/* Fim Modelo 2 */
+
+/* ínicio Modelo 2 */
+section#modelo3 {
+    width: 100%;
+    height: auto;
+
+    outline: 2px solid rgb(0, 255, 0);
+
+}
+
+section#modelo3 .titulos {
+    height: 10%;
+    outline: 2px solid blueviolet;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+section#modelo3 .album {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+section#modelo3 .album .imagens {
+    width: 100%;
+    margin: 10px 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+
+}
+
+section#modelo3 .album #album-img1 {
+    /*width: 400px;*/
+    width: 80%;
+    height: 100%;
+
+}
+
+section#modelo3 .album #img1 {
+    justify-content: right
+
+}
+
+section#modelo3 .album #album-img2 {
+    /*width: 430px;*/
+    width: 86%;
+    height: 100%;
+
+}
+
+section#modelo3 .album #img2 {
+    justify-content: center;
+
+}
+
+section#modelo3 .album #album-img3 {
+    /*width: 470px;*/
+    width: 94%;
+    height: 100%;
+
+}
+
+section#modelo3 .album #img3 {
+    justify-content: left;
+
+}
+
+/* Fim Modelo 3 */
 
 /* Fim Main */
 
@@ -169,3 +357,10 @@ footer a:hover {
 }
 
 /* Fim Footer */
+
+@media screen and (min-width: 1024px) {
+    article#conteiner {
+        max-width: 950px;
+
+    }
+}
