@@ -159,16 +159,12 @@ section#modelo1 .album #album-img1 {
 
 }
 
-section#modelo1 .album #album-img1:hover, section#modelo1 .album #img1:hover {
-    /*width: 400px;*/
-    width: 95%;
-    height: 90%;
+section#modelo1 .album > #img1 img:hover section#modelo1 .album #img1 {
     justify-content: center;
-    cursor: none;
+    cursor: pointer;
+    border: 2px solid red;
 
 }
-
-
 
 section#modelo1 .album #album-img2 {
     /*width: 430px;*/
@@ -187,6 +183,8 @@ section#modelo1 .album #album-img3 {
 section.modelos .album img {
     width: 100%;
     height: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
 
 }
 
