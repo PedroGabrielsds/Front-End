@@ -117,6 +117,14 @@ section.modelos {
 
 }
 
+section.modelos .album img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+}
+
 /* ínicio Modelo 1 */
 
 section#modelo1 {
@@ -155,23 +163,39 @@ section#modelo1 .album .imagens {
 section#modelo1 .album #album-img1 {
     /*width: 400px;*/
     width: 80%;
-    height: 100%;
+    height: auto;
+
+    border: 2px solid burlywood;
+    border-radius: 10px;
+
+    overflow: hidden;
 
 }
 
-section#modelo1 .album #img1:has(#album-img1 img:active) {
+section#modelo1 .album .imagens:has(#album-img1:hover) {
     justify-content: center;
 
 }
 
-section#modelo1 .album > #img1 img:active {
-    transform: scale(1.1);
-    cursor: pointer;
-    border: 2px solid red;
-
-    transition: transform 1.5s;
+section#modelo1 .album #album-img1:hover {
+    border: 2px solid brown;
+    transform: scale(1.031);
 
 }
+
+/*section#modelo1 .album .imagens:has(.albuns img:hover) {
+    justify-content: center;
+
+}
+
+section#modelo1 .album > .imagens img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 2px solid brown;
+
+    transition: transform 1.5s, border 1s;
+
+}*/
 
 section#modelo1 .album #album-img2 {
     /*width: 430px;*/
@@ -184,14 +208,6 @@ section#modelo1 .album #album-img3 {
     /*width: 470px;*/
     width: 94%;
     height: 100%;
-
-}
-
-section.modelos .album img {
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 10px;
 
 }
 
