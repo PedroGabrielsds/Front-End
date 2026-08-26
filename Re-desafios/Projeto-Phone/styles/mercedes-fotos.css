@@ -159,10 +159,17 @@ section#modelo1 .album #album-img1 {
 
 }
 
-section#modelo1 .album > #img1 img:hover section#modelo1 .album #img1 {
+section#modelo1 .album #img1:has(#album-img1 img:active) {
     justify-content: center;
+
+}
+
+section#modelo1 .album > #img1 img:active {
+    transform: scale(1.1);
     cursor: pointer;
     border: 2px solid red;
+
+    transition: transform 1.5s;
 
 }
 
