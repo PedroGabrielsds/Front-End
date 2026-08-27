@@ -125,6 +125,36 @@ section.modelos .album img {
 
 }
 
+section.modelos .album .albuns {
+    border: 2px solid black;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+section.modelos .imagens:has(.albuns:hover) {
+    justify-content: center;
+
+}
+
+section.modelos .album .albuns:hover {
+    border: 2px solid black;
+    transform: scale(1.031);
+
+}
+
+/*section.modelos .album .imagens:has(.albuns:hover) {
+    justify-content: center;
+
+}
+
+section.modelos .album .albuns:hover {
+    border: 2px solid brown;
+    transform: scale(1.031);
+
+}*/
+
 /* ínicio Modelo 1 */
 
 section#modelo1 {
@@ -172,28 +202,13 @@ section#modelo1 .album #album-img1 {
 
 }
 
-section#modelo1 .album .imagens:has(#album-img1:hover) {
+/*section.modelos .album .imagens:has(.albuns:hover) {
     justify-content: center;
 
 }
-
-section#modelo1 .album #album-img1:hover {
-    border: 2px solid brown;
-    transform: scale(1.031);
-
-}
-
-/*section#modelo1 .album .imagens:has(.albuns img:hover) {
+    
+section.modelos .album .imagens:has(.album-img1:hover) {
     justify-content: center;
-
-}
-
-section#modelo1 .album > .imagens img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    border: 2px solid brown;
-
-    transition: transform 1.5s, border 1s;
 
 }*/
 
