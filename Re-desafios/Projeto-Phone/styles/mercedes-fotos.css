@@ -112,8 +112,64 @@ article#conteiner {
 
 }
 
+/* Modelo dos albuns */
+
 section.modelos {
+    width: 100%;
+    height: auto;
     margin-top: 20px;
+    
+    outline: 2px solid black;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+}
+
+section.modelos .titulos {
+    height: 10%;
+    outline: 2px solid red;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+section.modelos .album {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+section.modelos .album .imagens {
+    width: 100%;
+    margin: 10px 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+
+}
+
+section.modelos .album .imgs1 {
+    /*width: 400px;*/
+    width: 80%;
+    height: 100%;
+
+}
+
+section.modelos .album .imgs2 {
+    /*width: 430px;*/
+    width: 86%;
+    height: 100%;
+
+}
+
+section.modelos .album .imgs3 {
+    /*width: 470px;*/
+    width: 94%;
+    height: 100%;
 
 }
 
@@ -139,221 +195,77 @@ section.modelos .imagens:has(.albuns:hover) {
 }
 
 section.modelos .album .albuns:hover {
-    border: 2px solid black;
     transform: scale(1.031);
+    cursor: none;
 
 }
-
-/*section.modelos .album .imagens:has(.albuns:hover) {
-    justify-content: center;
-
-}
-
-section.modelos .album .albuns:hover {
-    border: 2px solid brown;
-    transform: scale(1.031);
-
-}*/
 
 /* ínicio Modelo 1 */
 
-section#modelo1 {
-    width: 100%;
-    height: auto;
-    
-    outline: 2px solid rgb(0, 255, 0);
-
-}
-
-section#modelo1 .titulos {
-    height: 10%;
-    outline: 2px solid blueviolet;
-    text-align: center;
-    line-height: 50px;
-
-}
-
-section#modelo1 .album {
-    display: flex;
-    flex-flow: column wrap;
-
-}
-
-section#modelo1 .album .imagens {
-    width: 100%;
-    margin: 10px 0px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: right;
-    align-items: center;
-
-}
-
-section#modelo1 .album #album-img1 {
-    /*width: 400px;*/
-    width: 80%;
-    height: auto;
-
+section#modelo1 .album .albuns {
     border: 2px solid burlywood;
-    border-radius: 10px;
-
-    overflow: hidden;
 
 }
 
-/*section.modelos .album .imagens:has(.albuns:hover) {
-    justify-content: center;
+section#modelo1 .album .albuns:hover {
+    outline: 2px solid brown;
+    border: 2px solid white;
 
-}
-    
-section.modelos .album .imagens:has(.album-img1:hover) {
-    justify-content: center;
-
-}*/
-
-section#modelo1 .album #album-img2 {
-    /*width: 430px;*/
-    width: 86%;
-    height: 100%;
-
-}
-
-section#modelo1 .album #album-img3 {
-    /*width: 470px;*/
-    width: 94%;
-    height: 100%;
+    transition: transform 1s, border 0.8s, outline 0.9s;
 
 }
 
 /* Fim Modelo 1 */
 
 /* ínicio Modelo 2 */
-section#modelo2 {
-    width: 100%;
-    height: auto;
-
-    outline: 2px solid rgb(0, 255, 0);
-
-}
-
-section#modelo2 .titulos {
-    height: 10%;
-    outline: 2px solid blueviolet;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px;
-
-}
-
-section#modelo2 .album {
-    display: flex;
-    flex-flow: column wrap;
-
-}
-
-section#modelo2 .album .imagens {
-    width: 100%;
-    margin: 10px 0px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: right;
-    align-items: center;
-
-}
-
-section#modelo2 .album #album-img1 {
-    /*width: 400px;*/
-    width: 80%;
-    height: 100%;
-
-}
 
 section#modelo2 .album #img1, section#modelo2 .album #img3 {
     justify-content: left;
 
 }
 
-section#modelo2 .album #album-img2 {
-    /*width: 430px;*/
-    width: 86%;
-    height: 100%;
+section#modelo2 .album #img1:has(.albuns:hover), section#modelo2 .album #img3:has(.albuns:hover) {
+        justify-content: center;
 
 }
 
-section#modelo2 .album #album-img3 {
-    /*width: 470px;*/
-    width: 94%;
-    height: 100%;
+section#modelo2 .album .albuns:hover {
+    outline: 2px solid black;
+    border: 2px solid white;
+
+    transition: transform 1s, border 0.8s, outline 0.9s;
 
 }
 
 /* Fim Modelo 2 */
 
-/* ínicio Modelo 2 */
-section#modelo3 {
-    width: 100%;
-    height: auto;
-
-    outline: 2px solid rgb(0, 255, 0);
-
-}
-
-section#modelo3 .titulos {
-    height: 10%;
-    outline: 2px solid blueviolet;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px;
-
-}
-
-section#modelo3 .album {
-    display: flex;
-    flex-flow: column wrap;
-
-}
-
-section#modelo3 .album .imagens {
-    width: 100%;
-    margin: 10px 0px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: right;
-    align-items: center;
-
-}
-
-section#modelo3 .album #album-img1 {
-    /*width: 400px;*/
-    width: 80%;
-    height: 100%;
-
-}
+/* ínicio Modelo 3 */
 
 section#modelo3 .album #img1 {
     justify-content: right
 
 }
 
-section#modelo3 .album #album-img2 {
-    /*width: 430px;*/
-    width: 86%;
-    height: 100%;
+section#modelo3 .album #img1:has(.albuns:hover), #modelo3 .album #img3:has(.albuns:hover) {
+    justify-content: center;
+
+}
+
+#modelo3 .album .albuns:hover {
+    border: 2px solid white;
+    outline: 2px solid gray;
+
+    transition: transform 1s, border 0.8s, outline 0.9s;
+
+}
+
+#modelo3 .album #album-img2:hover {
+    outline: 2px solid orangered;
 
 }
 
 section#modelo3 .album #img2 {
     justify-content: center;
-
-}
-
-section#modelo3 .album #album-img3 {
-    /*width: 470px;*/
-    width: 94%;
-    height: 100%;
 
 }
 
