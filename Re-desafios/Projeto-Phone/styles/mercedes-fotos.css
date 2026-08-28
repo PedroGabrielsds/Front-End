@@ -129,7 +129,8 @@ section.modelos {
 
 section.modelos .titulos {
     height: 10%;
-    outline: 2px solid red;
+    margin: 5px;
+    border-radius: 5px;
     text-align: center;
     line-height: 50px;
 
@@ -143,7 +144,7 @@ section.modelos .album {
 
 section.modelos .album .imagens {
     width: 100%;
-    margin: 10px 0px;
+    margin: 20px 0px;
 
     display: flex;
     flex-flow: row wrap;
@@ -202,6 +203,32 @@ section.modelos .album .albuns:hover {
 
 /* ínicio Modelo 1 */
 
+section#modelo1 {
+    background-color: beige;
+    outline: 2px solid #4b1414;
+    border: 2px solid transparent;
+
+}
+
+section#modelo1 .titulos {
+    background-color: #4b1414;
+    color: beige;
+    outline: 2px solid #4b1414;
+    border: 2px solid beige;
+
+    transition: border 1s, outline 1.5s, color 1s, background-color 1s;
+
+}
+
+section#modelo1 .titulos:hover {
+    background-color: beige;
+    color: #4b1414;
+    border: 2px solid #4b1414;
+    outline: none;
+    border-radius: 5px;
+
+}
+
 section#modelo1 .album .albuns {
     border: 2px solid burlywood;
 
@@ -209,7 +236,7 @@ section#modelo1 .album .albuns {
 
 section#modelo1 .album .albuns:hover {
     outline: 2px solid brown;
-    border: 2px solid white;
+    border: 2px solid transparent;
 
     transition: transform 1s, border 0.8s, outline 0.9s;
 
@@ -219,19 +246,40 @@ section#modelo1 .album .albuns:hover {
 
 /* ínicio Modelo 2 */
 
+section#modelo2 {
+    background-color: gray;
+
+}
+
+section#modelo2 .titulos {
+    border: 2px solid black;
+    text-shadow: 1px 1px 10px lightgray;
+
+}
+
+section#modelo2 .titulos:hover {
+    background-color: black;
+    color: gray;
+    border: 2px solid red;
+    text-shadow: 1px 1px 8px red;
+
+    transition: border 1.5s, outline 1.5s, color 1s, background-color 1s, text-shadow 2s;
+
+}
+
 section#modelo2 .album #img1, section#modelo2 .album #img3 {
     justify-content: left;
 
 }
 
 section#modelo2 .album #img1:has(.albuns:hover), section#modelo2 .album #img3:has(.albuns:hover) {
-        justify-content: center;
+    justify-content: center;
 
 }
 
 section#modelo2 .album .albuns:hover {
-    outline: 2px solid black;
-    border: 2px solid white;
+    outline: 2px solid red;
+    border: 2px solid transparent;
 
     transition: transform 1s, border 0.8s, outline 0.9s;
 
@@ -240,6 +288,35 @@ section#modelo2 .album .albuns:hover {
 /* Fim Modelo 2 */
 
 /* ínicio Modelo 3 */
+
+section#modelo3 {
+    background-color: gray;
+    outline: 3px solid orangered;
+
+}
+
+section#modelo3 .titulos {
+    background-color: #838d99;
+    border: 2px solid black;
+    color: white;
+
+    transition: border 0.8s, background-color 1s, color 1s;
+
+}
+
+section#modelo3 .titulos:hover {
+    border: 2px solid orangered;
+    background-color: #bfc8d1;
+    color: black;
+
+    transition: border 0.8s, background-color 1s, color 0.8s, outline 1s;
+
+}
+
+section#modelo3:has(.titulos:hover) {
+    outline: 3px solid black;
+
+}
 
 section#modelo3 .album #img1 {
     justify-content: right
@@ -252,8 +329,8 @@ section#modelo3 .album #img1:has(.albuns:hover), #modelo3 .album #img3:has(.albu
 }
 
 #modelo3 .album .albuns:hover {
-    border: 2px solid white;
-    outline: 2px solid gray;
+    border: 2px solid transparent;
+    outline: 2px solid orangered;
 
     transition: transform 1s, border 0.8s, outline 0.9s;
 
@@ -276,9 +353,55 @@ section#modelo3 .album #img3 {
 
 /* Fim Modelo 3 */
 
-/* Fim Main */
+/* ínicio Modelo 4 */
 
-/* Inicio Footer */
+section#modelo4 {
+    background-color: rgb(29, 29, 29);
+    outline: 2px solid yellow;
+
+}
+
+section#modelo4 .titulos {
+    border: 2px solid rgb(247, 247, 88);
+    color: white;
+
+}
+
+section#modelo4 .titulos:hover {
+    border: 2px solid goldenrod;
+    text-shadow: 2px 2px 6px whitesmoke;
+    transition: text-shadow 1.2s, border 1.2s;
+
+}
+
+section#modelo4:has(.titulos:hover) {
+    outline: 2px solid goldenrod;
+    transition: outline 1.2s;
+
+}
+
+section#modelo4 .album .albuns {
+    border: 2px solid white;
+
+}
+
+section#modelo4 .album .albuns:hover {
+    border: 2px solid transparent;
+    outline: 2px solid yellow;
+
+    transition: border 1.2s, outline 1.2s;
+
+}
+
+/* Fim Modelo 4 */
+
+/*
+
+ Fim Main
+
+ Inicio Footer
+
+*/
 
 footer {
     width: 100%;
