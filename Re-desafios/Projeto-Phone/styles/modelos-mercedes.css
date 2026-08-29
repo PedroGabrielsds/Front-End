@@ -104,6 +104,8 @@ main {
     flex-flow: column wrap;
     align-items: center;
 
+    background-color: rgb(223, 223, 223);
+
 }
 
 article#conteiner {
@@ -139,6 +141,8 @@ section.modelos .titulos {
 section.modelos .album {
     display: flex;
     flex-flow: column wrap;
+
+    padding: 1px;
 
 }
 
@@ -201,7 +205,13 @@ section.modelos .album .albuns:hover {
 
 }
 
-/* ínicio Modelo 1 */
+/* 
+
+    Fim Modelos do Albuns
+
+    ínicio Modelo 1 
+
+*/
 
 section#modelo1 {
     background-color: beige;
@@ -242,9 +252,13 @@ section#modelo1 .album .albuns:hover {
 
 }
 
-/* Fim Modelo 1 */
+/* 
 
-/* ínicio Modelo 2 */
+    Fim Modelo 1 
+
+    ínicio Modelo 2 
+ 
+ */
 
 section#modelo2 {
     background-color: gray;
@@ -277,6 +291,21 @@ section#modelo2 .album #img1:has(.albuns:hover), section#modelo2 .album #img3:ha
 
 }
 
+section#modelo2 .album #img4 {
+    justify-content: center;
+
+}
+
+section#modelo2 .album #album-img4 {
+    width: 85%;
+
+}
+
+section#modelo2 .album #album-img4:hover {
+    outline: 2px solid white;
+
+}
+
 section#modelo2 .album .albuns:hover {
     outline: 2px solid red;
     border: 2px solid transparent;
@@ -285,9 +314,13 @@ section#modelo2 .album .albuns:hover {
 
 }
 
-/* Fim Modelo 2 */
+/* 
 
-/* ínicio Modelo 3 */
+    Fim Modelo 2
+
+    ínicio Modelo 3 
+    
+*/
 
 section#modelo3 {
     background-color: gray;
@@ -351,9 +384,13 @@ section#modelo3 .album #img3 {
 
 }
 
-/* Fim Modelo 3 */
+/* 
 
-/* ínicio Modelo 4 */
+    Fim Modelo 3
+
+    ínicio Modelo 4
+  
+*/
 
 section#modelo4 {
     background-color: rgb(29, 29, 29);
@@ -393,13 +430,38 @@ section#modelo4 .album .albuns:hover {
 
 }
 
-/* Fim Modelo 4 */
+section#modelo4 .album #img1, section#modelo4 .album #img4 {
+    justify-content: center;
 
-/*
+}
 
- Fim Main
+section#modelo4 .album #album-img4 {
+    width: 90%;
 
- Inicio Footer
+}
+
+section#modelo4 .album #img3, section#modelo4 .album #img5 {
+    justify-content: left;
+
+}
+
+section#modelo4 .album #img3:has(.albuns:hover), section#modelo4 .album #img5:has(.albuns:hover) {
+    justify-content: center;
+
+}
+
+section#modelo4 .album #album-img5 {
+    width: 90%;
+
+}
+
+/* 
+
+    Fim Modelo 4 
+
+    Fim Main
+
+    Inicio Footer
 
 */
 
