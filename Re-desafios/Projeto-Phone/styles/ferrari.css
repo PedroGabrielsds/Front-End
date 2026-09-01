@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* Início Header */
+
+header {
+    width: 100%;
+    height: 400px;
+    background: red url("../images/Ferrari/ferrari-logo-background.jpg") no-repeat center center/cover ;
+    
+    border: 2px solid gray;
+
+}
+
+header div#menu {
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+
+    border: 2px solid yellow;
+    background-color: rgba(255, 255, 255, 0.300);
+
+}
+
+header div#menu:hover {
+    cursor: pointer;
+    border: 2px solid black;
+
+}
+
+header div#menu:active {
+    border: 2px solid red;
+
+    color: white;
+
+}
+
+header div#menu #icon-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+}
+
+/* Fim Header */
