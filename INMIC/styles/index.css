@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: antiquewhite;
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header div#logo {
+    width: 50px;
+    height: 50px;
+
+}
+
+header div#logo a {
+    width: 90%;
+    height: 90%;
+    
+    border-radius: 50%;
+
+    display: block;
+    overflow: hidden;
+
+}
+
+header div#logo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+header div#menu {
+    padding: 10px;
+
+}
+
+header div#menu a {
+    margin-right: 10px;
+    padding: 10px;
+
+}
+
+/* 
+
+    Fim Header
+
+    Inicio Main
+
+*/
+
+main {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+section#setor {
+    border: 2px solid black;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 20px;
+
+}
+
+section.funcionarios {
+    width: 100%;
+
+    margin: auto;
+    border: 2px solid black;
+
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+section.funcionarios div.pessoas {
+    position: relative;
+    width: 300px;
+    margin: 60px auto;
+    padding: 10px;
+
+    outline: 2px solid red;
+    border-radius: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+section.funcionarios div.pessoas > .img-perfil {
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+    outline: 2px solid blueviolet;
+    border-radius: 20px 20px 0px 0px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.pessoas > .img-perfil > div.imagem {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    top: -30px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+}
+
+div.pessoas > .img-perfil > div.imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+section.funcionarios div.pessoas > div.nomes {
+    width: 100%;
+    height: 40px;
+
+    text-align: center;
+    font-weight: bold;
+    outline: 2px solid blueviolet;
+
+}
+
+section.funcionarios div.pessoas > div.pronomes {
+    width: 100%;
+    height: 40px;
+
+    text-align: center;
+    outline: 2px solid blueviolet;
+
+}
+
+section.funcionarios div.pessoas > div.descricoes {
+    width: 100%;
+    height: 40px;
+
+    text-align: center;
+    font-weight: bold;
+    outline: 2px solid blueviolet;
+
+    border-radius: 0px 0px 20px 20px;
+
+}
