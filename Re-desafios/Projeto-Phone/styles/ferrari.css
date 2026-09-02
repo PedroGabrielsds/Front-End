@@ -7,6 +7,14 @@
 
 }
 
+@font-face {
+    font-family: "Ferroso";
+    src: url("../Fonts/FerroRosso.ttf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 ::-webkit-scrollbar {
     display: none;
 
@@ -16,16 +24,23 @@ body {
     width: 100vw;
     height: 100vh;
 
+    background-color: white;
+
+    font-family: ;
+
 }
 
 /* Início Header */
 
 header {
     width: 100%;
-    height: 400px;
+    height: 250px;
     background: red url("../images/Ferrari/ferrari-logo-background.jpg") no-repeat center center/cover ;
+    border-radius: 0px 0px 10px 10px;
 
 }
+
+/*
 
 header div#botao-menu {
 
@@ -35,7 +50,6 @@ header div#botao-menu {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
 
     width: fit-content;
     cursor: pointer;
@@ -54,6 +68,10 @@ header div#botao-menu svg {
     height: 24px;
 
 }
+
+*/
+
+/* Botão de menu teste
 
 header div#teste {
     width: 40px;
@@ -80,4 +98,71 @@ header div#teste img {
 
 }
 
-/* Fim Header */
+*/
+
+/*
+
+    Fim Header 
+
+    Inicio Main
+
+*/
+
+main {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+article#ferrari {
+    width: 95%;
+    padding: 5px;
+
+    border: 2px solid black;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+article#ferrari h1 {
+    text-align: center;
+    margin: 10px;
+
+}
+
+article#ferrari h2, p {
+    margin-top: 10px;
+    text-align: start;
+
+}
+
+article#ferrari .figuras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+article#ferrari div.imagens {
+    width: 80.64%;
+    margin-top: 10px;
+
+    border: 2px solid red;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+article#ferrari div.imagens img {
+    width: 100%;
+    display: block;
+
+}
