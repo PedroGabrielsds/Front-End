@@ -84,6 +84,60 @@ a.botao:active {
 
 }
 
+section#botao-home-iphone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: 3;
+
+}
+
+section#botao-home-iphone div#espaco-botao-iphone {
+    position: absolute;
+
+    width: 250px;
+    height: 70px;
+
+    outline: 2px solid red;
+
+    top: 76%;
+    left: 36%;
+
+    transform: translate();
+
+}
+
+div#espaco-botao-iphone a {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+
+    top: 15%;
+    left: 38.7%;
+
+    transform: translate();
+
+}
+
+/*section#botao-home-iphone a {
+    position: absolute;
+    width: 42px;
+    height: 47px;
+
+    outline: 2px solid greenyellow;
+    border-radius: 50%;
+
+    display: block;
+
+    top: 77.3%;
+    left: 47.3%;
+
+}*/
+
 /* Configuração da barra de rolagem */
 section#conteiner-botoes::-webkit-scrollbar {
     height: 6px; 
