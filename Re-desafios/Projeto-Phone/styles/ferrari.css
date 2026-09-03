@@ -15,6 +15,14 @@
 
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/apple_garamond/AppleGaramond-Light.ttf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 ::-webkit-scrollbar {
     display: none;
 
@@ -24,9 +32,9 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background-color: white;
+    background-color: lightgray;
 
-    font-family: ;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 
 }
 
@@ -110,7 +118,6 @@ header div#teste img {
 
 main {
     width: 100%;
-    padding: 10px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -120,10 +127,14 @@ main {
 }
 
 article#ferrari {
-    width: 95%;
-    padding: 5px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: white;
 
-    border: 2px solid black;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -134,11 +145,31 @@ article#ferrari h1 {
     text-align: center;
     margin: 10px;
 
+    font-family: "Ferroso";
+
 }
 
 article#ferrari h2, p {
     margin-top: 10px;
     text-align: start;
+
+}
+
+article#ferrari .txt-especial {
+    text-decoration: none;
+    color: goldenrod;
+
+}
+
+article#ferrari .txt-especial:hover {
+    color: red;
+    text-decoration: underline;
+
+}
+
+article#ferrari .txt-especial:hover::before {
+    /*content: "\1F517";*/
+    content: "🔗";
 
 }
 
@@ -152,17 +183,111 @@ article#ferrari .figuras {
 
 article#ferrari div.imagens {
     width: 80.64%;
-    margin-top: 10px;
+    margin-top: 20px;
 
-    border: 2px solid red;
+    outline: 2px solid red;
+    border: 2px solid transparent;
     border-radius: 20px;
 
     overflow: hidden;
 
 }
 
+article#ferrari div.imagens:hover {
+    outline: 2px solid goldenrod;
+    border: 2px solid transparent;
+    transform: scale(1.031);
+
+    transition: border 1s, outline 1s, transform 0.8s;
+
+}
+
 article#ferrari div.imagens img {
     width: 100%;
     display: block;
+
+}
+
+#creditos {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+
+    border: 2px solid red;
+    border-radius: 15px;
+
+    text-align: center;
+
+}
+
+#creditos a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#creditos a:hover {
+    color: red;
+    text-decoration: underline;
+
+}
+
+#creditos a:hover::before {
+    content: "🔗";
+
+}
+
+#creditos a:active {
+    color: goldenrod;
+
+}
+
+/*
+
+    Fim Main 
+
+    Inicio Footer
+
+*/
+
+footer {
+    background-color: rgba(255, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: yellow;
+
+    font-family: "Ferroso";
+
+}
+
+footer a:hover {
+    font-weight: bold;
+    color: whitesmoke;
+
+    transition: font-weight 1s, color 1s;
+
+}
+
+/*
+
+    Fim Footer 
+
+    Inicio Media Queries
+
+*/
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 500px;
+
+    }
 
 }
