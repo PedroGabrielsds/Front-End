@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: black url("../images/Lamborghini/Background-image2.jpg") no-repeat center center/cover;
+
+}
