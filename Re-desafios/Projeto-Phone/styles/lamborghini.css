@@ -7,10 +7,125 @@
 
 }
 
+@font-face {
+    font-family: "LamboType";
+    src: url("../Fonts/Lambo-Medium.otf") ("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --cor-principal: #E39c03;
+    --cor-segundaria: #000;
+
+    --font-lambo: "Lambotype", "Arial", "Sans-serif";
+
+}
+
 body {
     width: 100vw;
     height: 100vh;
 
-    background: black url("../images/Lamborghini/Background-image2.jpg") no-repeat center center/cover;
+    background: black url("../images/Lamborghini/Background-image1.jpg") no-repeat center center/cover;
 
 }
+
+/* Inicio Main */
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section#historia {
+    width: 95%;
+    height: 465px;
+
+    padding: 10px 0px;
+
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+
+    overflow-x: scroll;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+section#historia .pictures, section#historia .textos {
+    width: 300px;
+    height: 300px;
+    margin: 0px 10px;
+
+    outline: 2px solid greenyellow;
+    border: 2px solid transparent;
+    border-radius: 40px;
+
+    flex-shrink: 0;
+    overflow: hidden;
+
+}
+
+section#historia .pictures img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+}
+
+section#historia .textos {
+    height: 280px;
+    outline: 2px solid red;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section#historia .textos > .txt {
+    width: 100%;
+    height: 100%;
+    border: 2px solid greenyellow;
+    border-radius: 40px;
+
+}
+
+/* Configuração da barra de rolagem */
+
+section#historia::-webkit-scrollbar {
+    height: 5px;
+
+}
+
+section#historia::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px 28px;
+    border-radius: 20px;
+
+}
+
+section#historia::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 20px;
+
+}
+
+section#historia::-webkit-scrollbar-thumb:active {
+    background-color: #E39c03;
+
+}
+
+/* Fim da Configuração da barra de rolagem */
