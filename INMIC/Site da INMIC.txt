@@ -6,15 +6,15 @@ Descrição: Ele tem um B-Ain-D
 
 Nome: Régis
 Pronome: PoooOooorrRrrrrraaAaaaaAaaa
-Descrição: Não colabora com outras equipes
+Descrição: Não colabora com outras equipes e pai do Leleco
 
 Nome: Ricardo
 Pronome: Nosso Docinho
 Descrição: O amor do Dorenildo
 
 Nome: Renan
-Pronome: 
-Descrição: 
+Pronome: Dilera
+Descrição: Ladentrin e nobotom
 
 Nome: Luizinho
 Pronome: Luiz noites
@@ -25,29 +25,30 @@ Pronome: Não come nada
 Descrição: Estagiário Premium
 
 Nome: Detinha
-Pronome: 
+Pronome: Decanas
 Descrição: Mamãe querida! 
 
 Nome: Miguel
 Pronome: O cara das impressoras
-Descrição: Então ele é?
+Descrição: Adora ir no estoque acompanhado depois das 20:00
 
-Nome: João
+Nome: Pepe Moreno
 Pronome: Vaaagaabundo
-Descrição: Conseguiu falir uma vendinha
+Descrição: Faliu uma vendinha e ficou arrepiado
 
 Nome: Marcão
 Pronome: Cunhado do João
-Descrição: 
+Descrição: Curioso nas horas vagas
 
 Nome: Fabão
 Pronome: Vai curintia!
-Descrição: Volta descalço mas não perde uma venda
+Descrição: Volta descalço, mas não perde uma venda
 
 Nome: Dorenildo
 Pronome: Estou completo
-Descrição: Vende queijo falsificado
+Descrição: Vendedor de queijo falsificado e não bebe água
 
 Nome: Caseiro
 Pronome: Amigo estou aqui
-Descrição: 
+Descrição: Não concordo e nem discordo, muito pelo contrário -Dilma
+
