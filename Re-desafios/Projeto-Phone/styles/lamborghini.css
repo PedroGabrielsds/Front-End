@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "LamboType";
-    src: url("../Fonts/Lambo-Medium.otf") ("opentype");
+    src: url("../Fonts/Lambo-Medium.otf")format("opentype");
     font-weight: normal;
     font-style: normal;
 
@@ -63,12 +63,8 @@ section#historia {
 }
 
 section#historia .pictures, section#historia .textos {
-    width: 300px;
-    height: 300px;
+    height: 80%;
     margin: 0px 10px;
-
-    outline: 2px solid greenyellow;
-    border: 2px solid transparent;
     border-radius: 40px;
 
     flex-shrink: 0;
@@ -76,7 +72,22 @@ section#historia .pictures, section#historia .textos {
 
 }
 
-section#historia .pictures img {
+section#historia .pictures {
+    width: 98%;
+    height: 65%;
+    
+    outline: 2px solid greenyellow;
+    border: 2px solid transparent;
+
+}
+
+section#historia .pictures .imagens {
+    width: 100%;
+    height: 100%;
+
+}
+
+section#historia .pictures .imagens img {
     width: 100%;
     height: 100%;
 
@@ -85,7 +96,9 @@ section#historia .pictures img {
 }
 
 section#historia .textos {
-    height: 280px;
+    width: 95%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.329);
     outline: 2px solid red;
 
     display: flex;
@@ -98,8 +111,24 @@ section#historia .textos {
 section#historia .textos > .txt {
     width: 100%;
     height: 100%;
-    border: 2px solid greenyellow;
+    padding: 10px;
     border-radius: 40px;
+
+    text-align: start;
+    color: whitesmoke;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+section#historia .textos > .txt h1 {
+    text-align: center;
+    font-family: "LamboType";
+    margin: 5px 0px;
 
 }
 
