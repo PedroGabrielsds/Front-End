@@ -27,7 +27,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background: black url("../images/Lamborghini/Background-image5.jpg") no-repeat center center/cover;
+    background: black url("../images/Lamborghini/Background-image3.jpg") no-repeat center center/cover;
 
 }
 
@@ -48,7 +48,7 @@ section.vagas {
     /*height: 550px;*/
     height: 63%;
 
-    margin-top: 120px;
+    margin-top: 70px;
 
     overflow-x: scroll;
 
@@ -86,7 +86,7 @@ section.vagas::-webkit-scrollbar-thumb:active {
 /* Modelos */
 section.vagas .modelos {
     width: 100%;
-    height: 99%;
+    height: 97%;
 
     flex-shrink: 0;
 
@@ -98,15 +98,15 @@ section.vagas .modelos {
 
 section.vagas .modelos .titulos {
     width: 70%;
-    height: 150px;
-    margin-top: 10px;
+    /*height: 150px;*/
+    height: 30%;
+    padding: 25px;
 
     border: 2px solid orangered;
     border-radius: 20px;
 
     color: whitesmoke;
     text-align: center;
-    line-height: 150px;
 
     align-self: center;
 
@@ -118,7 +118,8 @@ section.vagas .modelos .titulos {
 
 section.vagas .modelos .fotos {
     width: 100%;
-    height: 400px;
+    /*height: 400px;*/
+    height: 60%;
 
     display: flex;
     flex-flow: column nowrap;
@@ -130,14 +131,24 @@ section.vagas .modelos .fotos {
 section.vagas .modelos .fotos > .imagens {
     width: 80%;
     height: 80%;
-    margin-right: 40px;
-
-    outline: 2px solid green;
+    margin-right: 20px;
 
 }
 
 section.vagas .modelos .fotos > .imagens img {
     width: 100%;
     height: 100%;
+
+}
+
+section.vagas .modelos .fotos > .imagens-menores {
+    width: 78%;
+    height: 60%;
+
+}
+
+section.vagas .modelos .fotos > #huracan {
+    width: 70%;
+    height: 80%;
 
 }

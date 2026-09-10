@@ -132,6 +132,19 @@ section#historia .textos > .txt h1 {
 
 }
 
+section#historia .textos > .txt a {
+    text-decoration: none;
+    color: #adff2f;
+
+}
+
+section#historia .textos > .txt a:hover::before, section#historia .textos > .txt a:hover {
+    content: "🔗";
+    color: orangered;
+    font-weight: bold;
+
+}
+
 /* Configuração da barra de rolagem */
 
 section#historia::-webkit-scrollbar {
