@@ -9,25 +9,109 @@ body {
     width: 100vw;
     height: 100vh;
 
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
     background: url("../images/Lamborghini/Background-image3.jpg") no-repeat center center/cover;
 
 }
 
-main {
+section#elevador {
+    position: absolute;
+    /*width: 470px;*/
     width: 100%;
-    height: 100%;
+    /*height: 550px;*/
+    max-height: 600px;
+    height: 60%;
+
+    /*top: 130px;*/
+    top: 35%;
+
+    transform: translate(0, -35%);
 
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    
+}
+
+section#elevador #carro {
+    width: 455px;
+    height: 100%;
+
+    margin-left: 20px;
+    outline: 2px solid red;
+
+    overflow-x: scroll;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
 
 }
 
-section#oficina {
-    width: 90%;
-    height: 300px;
+/* Configuração da barra de rolagem */
 
-    
+section#elevador #carro::-webkit-scrollbar {
+    height: 8px;
+
+}
+
+section#elevador #carro::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+}
+
+section#elevador #carro::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 20px;
+
+}
+
+section#elevador #carro::-webkit-scrollbar-thumb:active {
+    background-color: #E39c03;
+
+}
+
+/* Fim da Configuração da barra de rolagem */
+
+section#elevador #carro > .modelo {
+    width: 100%;
+    max-height: 300px;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+section#elevador #carro > .modelo > .imagem {
+    width: 80%;
+    height: 100%;
+
+}
+
+section#elevador #carro > .modelo > .imagens-menores {
+    height: 70%;
+
+}
+
+section#elevador #carro > .modelo > #huracan {
+    width: 70%;
+
+}
+
+#carro > .modelo > .imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    background-color: rgba(255, 255, 255, 0.205);
 
 }
