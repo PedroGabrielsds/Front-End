@@ -8,11 +8,10 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
-    background: #2A7B9B;
-    background: linear-gradient(90deg, #4A2718 0%, #CDB0A1 50%, #7A4E47 100%);
+    background: lightgray url("../images/fundo-madeira.jpg") no-repeat center center/cover;
 
     font-family: 'Courier New', Courier, monospace;
 
@@ -92,6 +91,7 @@ header div#menu a:hover {
 
 main {
     width: 100%;
+    height: 100%;
     max-width: 950px;
     margin: auto;
 
@@ -112,6 +112,8 @@ section#setor {
 
     gap: 10px;
 
+    color: white;
+
 }
 
 section#setor p {
@@ -120,8 +122,6 @@ section#setor p {
 }
 
 section.funcionarios {
-    width: 100%;
-
     margin: auto;
     border: 2px solid black;
 

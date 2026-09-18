@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background: lightgray url("../images/fundo-madeira.jpg") no-repeat center center/cover;
+
+}
+
+main {
+    width: 100%;
+
+}
+
+section#inmic {
+    width: 90%;
+    max-width: 1068px;
+    margin: auto;
+
+    outline: 2px solid green;
+
+}
+
+section#inmic #sobre {
+    width: 60%;
+    padding: 20px;
+    margin: 10px 0px;
+
+    outline: 2px solid blue;
+    color: white;
+
+}
+
+section#inmic .funcionarios {
+    width: 100%;
+
+    margin: 20px 0px;
+    padding: 20px;
+
+    border: 2px solid yellow;
+    background-color: rgba(255, 255, 255, 0.219);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section#inmic .funcionarios .pessoas {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: 2px solid blue;
+    border-radius: 20px;
+
+}
+
+div.funcionarios .pessoas .img-perfil {
+    position: relative;
+    width: 100%;
+    height: 120px;
+
+    outline: 1px solid black;
+    border-radius: 20px 20px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+div.funcionarios .pessoas .img-perfil .imagem {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    outline: 2px solid red;
+    border-radius: 50%;
+
+    top: -30px;
+
+}
+
+div.funcionarios .pessoas .nomes, .pronomes {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    outline: 1px solid greenyellow;
+
+}
+
+div.funcionarios .pessoas .descricoes {
+    width: 100%;
+    height: 180px;
+
+    border: 1px solid greenyellow;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+div.funcionarios .pessoas .descricoes #txt {
+    width: 98%;
+    height: 100%;
+
+}
