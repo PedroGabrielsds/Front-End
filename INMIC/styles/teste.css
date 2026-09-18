@@ -91,6 +91,15 @@ div.funcionarios .pessoas .img-perfil .imagem {
 
 }
 
+div.funcionarios .pessoas .img-perfil .imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    border-radius: 50%;
+
+}
+
 div.funcionarios .pessoas .nomes, .pronomes {
     width: 100%;
     height: 50px;
@@ -104,14 +113,21 @@ div.funcionarios .pessoas .nomes, .pronomes {
 div.funcionarios .pessoas .descricoes {
     width: 100%;
     height: 180px;
+    padding: 5px;
 
     border: 1px solid greenyellow;
     border-radius: 0px 0px 20px 20px;
+
+    overflow: hidden;
 
 }
 
 div.funcionarios .pessoas .descricoes #txt {
     width: 98%;
     height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
