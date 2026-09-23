@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche</title>
+    <link rel="stylesheet" href="../styles/porsche.css">
+    <link rel="shortcut icon" href="../images/porsche/logo-porsche.ico" type="image/x-icon">
+</head>
+<body class="historia">
+
+    <header id="cabecalho">
+        <a href="#" id="logo">Porsche</a>
+
+        <button type="button" id="menu-hamburguer">☰</button>
+
+        <nav id="menu-principal">
+            <a href="#" id="historia">História</a>
+            <a href="porsche-modelos.html" id="modelos">Modelos</a>
+            <a href="#" class="desktop">🔍</a>
+
+            <a href="#" id="mobile">Close</a>
+
+        </nav>
+
+    </header>
+
+    <script>
+        // 1. Captura os elementos no HTML
+        const btnMobile = document.getElementById('menu-hamburguer');
+        const menu = document.getElementById('menu-principal');
+        const cabecalho = document.getElementById('cabecalho');
+        const btnClose = document.getElementById('mobile');
+
+        // 2. Cria a função de interruptor (liga/desliga as classes CSS)
+        function alternarMenu() {
+            menu.classList.toggle('ativo');
+            cabecalho.classList.toggle('menu-aberto');
+        }
+
+        // 3. Adiciona os "espiões" de clique no hambúrguer e no botão 'Close'
+        btnMobile.addEventListener('click', alternarMenu);
+        btnClose.addEventListener('click', alternarMenu);
+    </script>
+    
+</body>
+</html>

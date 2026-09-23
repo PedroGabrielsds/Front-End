@@ -4,6 +4,14 @@
 
 }
 
+@font-face {
+    font-family: "porsche";
+    src: url("../Fonts/911porschav3.ttf")format("opentype");
+    font-weight: normal;
+    font-size: normal;
+
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -11,42 +19,128 @@ body {
 
 }
 
-header {
-    width: 100%;
-
-    display: flex;
-    flex-flow: column nowrap;
+.historia #historia, .modelos #modelos {
+    border-bottom: 2px solid #aa0000;
 
 }
 
-#cabecalho {
+header {
     height: 80px;
+    padding: 0px 40px;
+
+    outline: 2px solid greenyellow;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0px 10px;
+}
 
-    border: 2px solid yellow;
+#logo {
+    font-family: "porsche", "Arial";
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
 
 }
 
-#cabecalho #logo {
-    width: 350px;
-    
-}
-
-#cabecalho #menu {
-    width: 400px;
-    height: 40px;
-    outline: 2px solid red;
+#menu-hamburguer, #mobile {
+    display: none;
 
 }
 
-#cabecalho #menu a {
-    border: 2px solid red;
-    margin: 10px;
+#menu-principal {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+header #menu-principal a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 768px) {
+    #menu-principal {
+        display: none;
+
+    }
+
+    #menu-hamburguer, #mobile {
+        display: block;
+
+    }
+
+    #menu-hamburguer {
+        padding: 4px 8px;
+
+        background-color: transparent;
+        color: #000000;
+        font-size: 24px;
+        border: 2px solid #aa0000;
+        border-radius: 4px;
+        cursor: pointer;
+
+    }
+
+    #menu-principal {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+
+        display: none;
+
+        flex-direction: column;
+        align-items: flex-end;
+        
+        top: 80px;
+        right: 0;
+        
+        background-color: #1a1a1a;
+        padding: 40px;
+        gap: 20px;
+
+    }
+
+    #menu-principal a {
+        color: #ffffff;
+        font-size: 18px;
+
+    }
+
+    /* A CLASSE INJETADA PELO JS */
+    #menu-principal.ativo {
+        display: flex;
+
+    }
+
+    /* Mostra o texto "Close" cinza exclusivo do Mobile */
+    #mobile {
+        display: block !important;
+        color: #888888 !important;
+        margin-top: 20px;
+
+    }
+
+    header.menu-aberto {
+        background-color: #1a1a1a;
+        border-bottom: none;
+
+    }
+
+    header.menu-aberto .logo {
+        color: #444444; /* Escurece a logo */
+    }
+
+    header.menu-aberto #menu-hamburguer {
+        color: #ffffff; /* Ícone hambúrguer fica branco */
+    }
 
 }

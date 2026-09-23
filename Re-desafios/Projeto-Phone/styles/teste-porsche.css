@@ -1,0 +1,129 @@
+/* 1. RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e5e5e5; /* Fundo cinza genérico para destacar o header branco */
+}
+
+/* =========================================
+   2. DESKTOP BASE (Monitor)
+   ========================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* O botão hambúrguer não existe no PC */
+#btn-mobile {
+    display: none; 
+}
+
+/* O menu em linha horizontal no PC */
+#menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#menu-principal a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Esconde o botão "Close" no PC */
+.apenas-mobile {
+    display: none !important;
+}
+
+/* =========================================
+   3. MOBILE (Celulares e Tablets)
+   ========================================= */
+@media (max-width: 768px) {
+    
+    header {
+        padding: 0 20px;
+    }
+
+    /* Mostra o gatilho hambúrguer isolado do menu */
+    #btn-mobile {
+        display: block; 
+        background: transparent;
+        border: 2px solid #aa0000; /* Borda vermelha do botão */
+        color: #000000;
+        font-size: 24px;
+        padding: 4px 8px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    /* O ALVO: O MENU SE TRANSFORMA NA TELA PRETA (Escondido por padrão) */
+    #menu-principal {
+        display: none; /* Inicia escondido */
+        flex-direction: column;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px); /* Ocupa o resto da tela */
+        background-color: #1a1a1a;
+        padding: 40px;
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    /* A CLASSE INJETADA PELO JS (Faz a tela preta aparecer) */
+    #menu-principal.ativo {
+        display: flex;
+    }
+
+    /* Estilização dos links na tela preta */
+    #menu-principal a {
+        color: #ffffff; /* Letras brancas no fundo escuro */
+        font-size: 18px;
+    }
+
+    /* A REGRA DE DISFARCE: Esconde os itens do Desktop (Home e Lupa) */
+    .apenas-desktop {
+        display: none !important;
+    }
+
+    /* Mostra o texto "Close" cinza exclusivo do Mobile */
+    .apenas-mobile {
+        display: block !important;
+        color: #888888 !important;
+        margin-top: 20px;
+    }
+
+    /* Efeito extra: Escurece o próprio header quando o menu abrir */
+    header.menu-aberto {
+        background-color: #1a1a1a;
+        border-bottom: none;
+    }
+    header.menu-aberto .logo {
+        color: #444444; /* Escurece a logo */
+    }
+    header.menu-aberto #btn-mobile {
+        color: #ffffff; /* Ícone hambúrguer fica branco */
+    }
+}

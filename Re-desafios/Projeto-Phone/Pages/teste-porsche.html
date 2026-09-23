@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Porsche</title>
+    <link rel="stylesheet" href="../styles/teste-porsche.css">
+</head>
+<body>
+
+    <!-- A ESTRUTURA ÚNICA DE HTML -->
+    <header id="cabecalho">
+        
+        <a href="#" class="logo">Porsche</a>
+
+        <!-- O Gatilho separado (Irmão do menu) -->
+        <button id="btn-mobile">☰</button>
+
+        <!-- O Alvo único -->
+        <nav id="menu-principal">
+            <!-- Home e Lupa usam classe para sumir no celular -->
+            <a href="#" class="apenas-desktop" style="border-bottom: 2px solid #a00;">Home</a>
+            <a href="#">History</a>
+            <a href="#">Models</a>
+            <a href="#">Technology</a>
+            <a href="#">Motorsport</a>
+            <a href="#">Contact</a>
+            <a href="#" class="apenas-desktop">🔍</a>
+
+            <!-- Close usa classe para existir apenas no celular -->
+            <a href="#" class="apenas-mobile" id="btn-close">Close</a>
+        </nav>
+        
+    </header>
+
+    <!-- O GATILHO (JavaScript) -->
+    <script>
+        // 1. Captura os elementos no HTML
+        const btnMobile = document.getElementById('btn-mobile');
+        const menu = document.getElementById('menu-principal');
+        const cabecalho = document.getElementById('cabecalho');
+        const btnClose = document.getElementById('btn-close');
+
+        // 2. Cria a função de interruptor (liga/desliga as classes CSS)
+        function alternarMenu() {
+            menu.classList.toggle('ativo');
+            cabecalho.classList.toggle('menu-aberto');
+        }
+
+        // 3. Adiciona os "espiões" de clique no hambúrguer e no botão 'Close'
+        btnMobile.addEventListener('click', alternarMenu);
+        btnClose.addEventListener('click', alternarMenu);
+    </script>
+
+</body>
+</html>
