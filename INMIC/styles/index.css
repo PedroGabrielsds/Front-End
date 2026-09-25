@@ -19,6 +19,26 @@
 
 }
 
+@keyframes brilho-rgb {
+  0% {
+    border-color: rgb(255, 0, 0); /* Vermelho */
+    box-shadow: 0 0 15px rgb(255, 0, 0), inset 0 0 10px rgb(255, 0, 0);
+  }
+  33% {
+    border-color: rgb(0, 255, 0); /* Verde */
+    box-shadow: 0 0 15px rgb(0, 255, 0), inset 0 0 10px rgb(0, 255, 0);
+  }
+  66% {
+    border-color: rgb(0, 0, 255); /* Azul */
+    box-shadow: 0 0 15px rgb(0, 0, 255), inset 0 0 10px rgb(0, 0, 255);
+  }
+  100% {
+    border-color: rgb(255, 0, 0); /* Volta ao Vermelho para um loop perfeito */
+    box-shadow: 0 0 15px rgb(255, 0, 0), inset 0 0 10px rgb(255, 0, 0);
+  }
+
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -60,7 +80,7 @@ section#inmic .funcionarios {
 }
 
 section#inmic .funcionarios .pessoas {
-    width: 280px;
+    width: 300px;
     min-height: 250px;
     
     margin: 30px;
@@ -74,17 +94,12 @@ section#inmic .funcionarios .pessoas {
 
     box-shadow: 0px 12px 0px black;
 
-
-}
-
-section#inmic .funcionarios #caseiro {
-    border: 2px solid var(--cor-caseiro);
-    box-shadow: 0px 12px 0px var(--cor-caseiro); 
+    animation: brilho-rgb 3s linear infinite;
 
 }
 
 div.funcionarios #caseiro .img-perfil .imagem {
-    outline: 2px solid var(--cor-caseiro);
+    animation: brilho-rgb 3s linear infinite;
 
 }
 
