@@ -16,7 +16,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: #ebebeb;
 
 }
 
@@ -28,8 +28,12 @@ body {
 /* Inicio Header */
 
 header {
+    max-width: 1200px;
     height: 80px;
+    margin: auto;
     padding: 0px 40px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -77,10 +81,11 @@ header #menu-principal a {
 
 main {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
     display: grid;
     grid-template-columns: 2.5% 95% 2.5%;
-
-    background-color: #ebebeb;
 
 }
 
@@ -95,28 +100,89 @@ section#banner {
 section#banner img {
     width: 100%;
     height: 100%;
+    max-height: 672px;
 
     display: block;
 
 }
 
 section#conteudo {
+    padding: 10px 0px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+
+}
+
+#historia-marca, #linha-do-tempo {
+    width: 100%;
+    margin: 10px auto;
+
     background-color: white;
-    border: 2px solid green;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row nowrap;
+
+
+}
+
+#historia-marca #texto {
+    width: 98%;
+    padding: 2%;
+    text-align: start;
+
+}
+
+#historia-marca #texto h1, h2, p {
+    margin-top: 20px;
+
+}
+
+#historia-marca #texto p:hover {
+    cursor: none;
+    background-color: rgba(255, 255, 0, 0.445);
+
+}
+
+#historia-marca .imagens {
+    width: 80%;
+    max-width: 400px;
+
+    height: 200px;
+    margin: 25px auto;
+
+}
+
+#historia-marca #retrato {
+    width: 50%;
+    max-width: 200px;
+    height: 300px;
+
     border-radius: 10px;
 
 }
 
+#historia-marca #retrato img {
+    outline: 2px solid gray;
+    border: 2px solid transparent;
 
-#historia-marca, #linha-do-tempo {
-    margin: 10px auto;
-    border: 2px solid red;
+}
+
+#historia-marca .imagens img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
+
+    display: block;
+
+}
+
+#conteudo .especial {
+    font-family: "porsche";
 
 }
 
 #linha-do-tempo ul {
-    
     margin: auto;
     list-style-position: inside;
 
@@ -130,7 +196,7 @@ section#conteudo {
 */
 
 /* Inicio Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     #menu-principal, #menu-principal .desktop {
         display: none;
 
@@ -204,6 +270,32 @@ section#conteudo {
 
     header.menu-aberto #menu-hamburguer {
         color: #ffffff;
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    #conteudo {
+        grid-column: 1 / -1;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #banner, #banner img {
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    #conteudo {
+        max-width: 1200px;
+
+    }
+
+    #historia-marca, #linha-do-tempo {
+        
+        margin: auto;
 
     }
 
