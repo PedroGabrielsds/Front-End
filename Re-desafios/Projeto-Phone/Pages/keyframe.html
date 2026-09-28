@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        @keyframes bordaArcoIris {
+            0%   { border-color: #ff0000; } /* Vermelho */
+            0%   { outline-color: #ff0000; } /* Vermelho */
+            16%  { border-color: #ff7f00; } /* Laranja */
+            16%  { outline-color: #ff7f00; } /* Laranja */
+            33%  { border-color: #ffff00; } /* Amarelo */
+            33%  { outline-color: #ffff00; } /* Amarelo */
+            50%  { border-color: #00ff00; } /* Verde */
+            50%  { outline-color: #00ff00; } /* Verde */
+            66%  { border-color: #0000ff; } /* Azul */
+            66%  { outline-color: #0000ff; } /* Azul */
+            83%  { border-color: #4b0082; } /* Índigo */
+            83%  { outline-color: #4b0082; } /* Índigo */
+            95%  { border-color: #ee82ee; } /* Rosa  */
+            95%  { outline-color: #ee82ee; } /* Rosa  */
+            100% { border-color: #ff0000; } /* Volta pro Vermelho */
+            100% { outline-color: #ff0000; } /* Volta pro Vermelho */
+
+        }
+
+        @keyframes pulsoVerde {
+            0%   { border-color: #00ff00; }
+            50%  { border-color: #000000; }
+            100% { border-color: #00ff00; }
+        }
+
+        @keyframes pulsoVermelho {
+            0%   { border-color: #ff0000; }
+            50%  { border-color: #000000; }
+            100% { border-color: #ff0000; }
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: gray;
+
+        }
+
+        #caixa {
+            width: 200px;
+            height: 200px;
+
+            outline: 2px solid black;
+            border: 2px solid black;
+            border-radius: 10px;
+            animation: pulsoVerde 1.5s ease-in-out infinite;
+
+            box-shadow: 5px 5px 10px 0px rgba(3, 3, 3, 0.363);
+
+        }
+
+        /*#caixa:hover {
+            animation: pulsoVermelho 2s ease-in-out infinite;
+
+        }*/
+
+        #caixa:hover {
+            animation: bordaArcoIris 1.5s linear infinite;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="caixa">
+
+
+    </div>
+
+    
+</body>
+</html>
