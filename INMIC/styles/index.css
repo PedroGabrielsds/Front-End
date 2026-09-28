@@ -19,25 +19,40 @@
 
 }
 
-@keyframes brilho-rgb {
+@keyframes bordaArcoIris {
+  0%   { border-color: #ff0000; } /* Vermelho */
+  16%  { border-color: #ff7f00; } /* Laranja */
+  33%  { border-color: #ffff00; } /* Amarelo */
+  50%  { border-color: #00ff00; } /* Verde */
+  66%  { border-color: #0000ff; } /* Azul */
+  83%  { border-color: #4b0082; } /* Índigo */
+  100% { border-color: #ff0000; } /* Volta pro Vermelho */
+}
+
+
+/* @keyframes brilho-rgb {
   0% {
-    border-color: rgb(255, 0, 0); /* Vermelho */
+    border-color: rgb(255, 0, 0); Vermelho 
     box-shadow: 0 0 15px rgb(255, 0, 0), inset 0 0 10px rgb(255, 0, 0);
   }
   33% {
-    border-color: rgb(0, 255, 0); /* Verde */
-    box-shadow: 0 0 15px rgb(0, 255, 0), inset 0 0 10px rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0); /* Verde 
+    
   }
   66% {
-    border-color: rgb(0, 0, 255); /* Azul */
-    box-shadow: 0 0 15px rgb(0, 0, 255), inset 0 0 10px rgb(0, 0, 255);
+    border-color: rgb(0, 0, 255); /* Azul 
+    
   }
   100% {
-    border-color: rgb(255, 0, 0); /* Volta ao Vermelho para um loop perfeito */
-    box-shadow: 0 0 15px rgb(255, 0, 0), inset 0 0 10px rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0); /* Volta ao Vermelho para um loop perfeito 
+    
   }
 
 }
+  */
+
+
+
 
 body {
     width: 100%;
@@ -92,25 +107,25 @@ section#inmic .funcionarios .pessoas {
     
     border-radius: 20px;
 
-    box-shadow: 0px 12px 0px black;
-
-    animation: brilho-rgb 3s linear infinite;
-
-}
-
-div.funcionarios #caseiro .img-perfil .imagem {
-    animation: brilho-rgb 3s linear infinite;
+    
+    animation: bordaArcoIris 4s linear infinite; 
+    
 
 }
 
-section#inmic .funcionarios #dom {
-    border: 2px solid var(--cor-dom);
-    box-shadow: 0px 12px 0px var(--cor-dom); 
+.funcionarios #dom {
+    
+    animation: bordaArcoIris 4s linear infinite; /* 'linear' mantém a velocidade constante */
 
+}
+
+.elemento-arco-iris {
+  border: 2px solid #050505; /* Cor base caso o navegador falhe */
+  animation: bordaArcoIris 4s linear infinite; /* 'linear' mantém a velocidade constante */
 }
 
 div.funcionarios #dom .img-perfil .imagem {
-    outline: 2px solid var(--cor-dom);
+    animation: bordaArcoIris 4s linear infinite; 
 
 }
 
