@@ -7,18 +7,6 @@
 
 }
 
-:root {
-    --cor-dom: green;
-    --cor-james-luiz: black;
-    --cor-regis: pink;
-    --cor-renan: greenyellow;
-    --cor-ricardo: gray;
-    --cor-caseiro: red;
-    --cor-detinha: orangered;
-    --cor-miguel: violet;
-
-}
-
 @keyframes bordaArcoIris {
   0%   { border-color: #ff0000; } /* Vermelho */
   16%  { border-color: #ff7f00; } /* Laranja */
@@ -62,7 +50,7 @@ main {
 
 section#inmic {
     width: 90%;
-    max-width: 1700px;
+    max-width: 1400px;
     margin: auto;
 
 }
@@ -78,7 +66,6 @@ section#inmic .funcionarios {
     width: 100%;
 
     margin: 20px 0px;
-    padding: 20px;
 
     display: flex;
     flex-flow: row wrap;
@@ -91,7 +78,7 @@ section#inmic .funcionarios .pessoas {
     width: 300px;
     min-height: 250px;
     
-    margin: 30px;
+    margin: 100px 0px;
 
     font-weight: bold;
 
@@ -172,6 +159,21 @@ div.funcionarios .pessoas .descricoes {
 
 }
 
+div.funcionarios .pessoas .descricoes a {
+    text-decoration: none;
+    color: black;
+
+}
+span {
+    color: red;
+
+}
+
+div.funcionarios .pessoas .descricoes a:hover {
+    color: red;
+
+}
+
 div.funcionarios .pessoas .descricoes #txt {
     width: 99%;
 
@@ -179,4 +181,18 @@ div.funcionarios .pessoas .descricoes #txt {
     justify-content: center;
     align-items: center;
 
+}
+
+@media screen and (max-width: 680px) {
+     section#inmic #sobre {
+        width: 90%;
+
+     }
+}
+
+@media screen and (min-width: 680px) {
+    section#inmic .funcionarios .pessoas{
+        margin: 50px;
+
+    }
 }
