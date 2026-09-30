@@ -51,6 +51,8 @@ section#elevador #carro {
     flex-flow: column wrap;
     justify-content: flex-end;
 
+    outline: 2px solid red;
+
 }
 
 /* Configuração da barra de rolagem */
@@ -87,6 +89,8 @@ section#elevador #carro > .modelo {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    outline: 2px solid red;
 
 }
 

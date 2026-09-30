@@ -148,7 +148,7 @@ section#historia .textos > .txt a:hover::before, section#historia .textos > .txt
 /* Configuração da barra de rolagem */
 
 section#historia::-webkit-scrollbar {
-    height: 5px;
+    height: 10px;
 
 }
 
@@ -170,4 +170,45 @@ section#historia::-webkit-scrollbar-thumb:active {
 
 }
 
-/* Fim da Configuração da barra de rolagem */
+/* 
+
+    Fim da Configuração da barra de rolagem 
+
+    Inicio Media Queries
+
+*/
+
+@media screen and (min-width: 600px) {
+    section#historia {
+        width: 80%;
+        height: 70%;
+        min-height: 466px;
+        
+
+    }
+
+    section#historia::-webkit-scrollbar {
+        height: 12px;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    section#historia {
+        max-width: 900px;
+
+    }
+
+    section#historia .pictures {
+        width: 70%;
+        height: 60%;
+
+    }
+
+    section#historia .textos {
+
+
+    }
+
+}
